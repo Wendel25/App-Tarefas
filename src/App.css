@@ -1,38 +1,120 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  /*background-image: linear-gradient(to bottom, #0d9df7, #06e7f7a7, white);*/
+  background-color: #06e7f7a7;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.boxTarefas{
+  width: 80%;
+  max-width: 800px;
+  background-color: #5f9ddb;
+  padding: 30px 50px;
+  margin: 10px auto;
+  border-radius: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.textColor{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.boxTarefas h2{
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.tarefaSingle {
+  font-size: 15px;
+  padding: 8px 10px;
+  border-bottom: 2px dotted #ccc;
+  display: flex;
+  
+}
+
+.tarefaSingle p {
+  cursor: pointer;
+  width: 100%;
+}
+
+.tarefaSingle span{
+  cursor: pointer;
+}
+
+.addTarefa{
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  background-color: #f5a399;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  font-size: 30px;
+  line-height: 45px;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+  z-index:9999;
+}
+
+.modalContent{
+  min-width: 600px;
+  padding: 40px 20px;
+  background-color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 20px;
+}
+
+.text-modal{
+  position: relative;
+  color: #f5a399;
+  font-weight: 200px;
+  text-align: center;
+}
+
+.input-modal{
+  flex: 1;
+  height: 30px;
+  padding-left: 5px; 
+}
+
+.btn-btn{
+  background-color: #f5a399;
+  padding: 8px 10px;
+  margin: 20px;
+  border-radius: 20px;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+.limpar{
+  position: fixed;
+  right: 75px;
+  bottom: 15px;
+  background-color: #f5a399;
+  width: 70px;
+  height: 40px;
+  cursor: pointer;
+  border-radius: 25px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  line-height: 40px;
 }
